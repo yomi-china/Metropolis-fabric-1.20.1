@@ -4,14 +4,6 @@ import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.Tesselator;
-import team.dovecotmc.metropolis.Metropolis;
-import team.dovecotmc.metropolis.abstractinterface.util.MALocalizationUtil;
-import team.dovecotmc.metropolis.item.ItemTicket;
-import team.dovecotmc.metropolis.item.MetroItems;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -23,6 +15,14 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ItemStack;
+import team.dovecotmc.metropolis.Metropolis;
+import team.dovecotmc.metropolis.abstractinterface.util.MALocalizationUtil;
+import team.dovecotmc.metropolis.item.ItemTicket;
+import team.dovecotmc.metropolis.item.MetroItems;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 /**
  * @author Arrokoth

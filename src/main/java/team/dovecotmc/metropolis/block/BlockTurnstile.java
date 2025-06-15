@@ -1,7 +1,5 @@
 package team.dovecotmc.metropolis.block;
 
-import mtr.block.BlockTicketBarrier;
-import mtr.data.RailwayData;
 import mtr.data.Station;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

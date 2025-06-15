@@ -1,11 +1,9 @@
 package team.dovecotmc.metropolis;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -35,6 +33,78 @@ public class Metropolis implements ModInitializer {
     public static final CreativeModeTab ITEM_GROUP = FabricItemGroup.builder()
             .title(Component.translatable("itemGroup." + MOD_ID + ".all")) // 添加标题
             .icon(() -> new ItemStack(MetroItems.ITEM_ITV_MONITOR))
+            .displayItems((parameters, output) -> {
+                output.accept(MetroItems.ITEM_CABLE);
+
+                output.accept(MetroItems.ITEM_TICKET_VENDOR_TOP);
+                output.accept(MetroItems.ITEM_TICKET_VENDOR_PANEL);
+                output.accept(MetroItems.ITEM_TICKET_VENDOR_EM10);
+                output.accept(MetroItems.ITEM_TICKET_VENDOR_EV23);
+                output.accept(MetroItems.ITEM_FARE_ADJ_EV23);
+                // Ceiling
+                output.accept(MetroItems.ITEM_CEILING_A);
+
+                // Lamp
+                output.accept(MetroItems.ITEM_FLUORESCENT_LAMP);
+                output.accept(MetroItems.ITEM_BUMPER);
+                output.accept(MetroItems.ITEM_CAMERA);
+
+                // Turnstile
+                output.accept(MetroItems.ITEM_TURNSTILE_ENTER);
+                output.accept(MetroItems.ITEM_TURNSTILE_EXIT);
+                output.accept(MetroItems.ITEM_TURNSTILE_IC_ONLY_ENTER);
+                output.accept(MetroItems.ITEM_TURNSTILE_IC_ONLY_EXIT);
+
+                // Sign
+                output.accept(MetroItems.ITEM_SIGN_NO_PHOTO);
+
+                // PSD
+                output.accept(MetroItems.ITEM_PSD_JR_DOOR_1);
+                output.accept(MetroItems.ITEM_PSD_JR_DOOR_2);
+                output.accept(MetroItems.ITEM_PSD_JR_FENCE_1);
+                output.accept(MetroItems.ITEM_PSD_JR_FENCE_2);
+
+                // Ticket
+                output.accept(MetroItems.ITEM_SINGLE_TRIP_TICKET);
+                output.accept(MetroItems.ITEM_SINGLE_TRIP_TICKET_USED);
+                output.accept(MetroItems.ITEM_CARD);
+                output.accept(MetroItems.ITEM_CREATIVE_CARD);
+                output.accept(MetroItems.ITEM_EXIT_TICKET);
+
+                // Monitor
+                output.accept(MetroItems.ITEM_ITV_MONITOR);
+
+                // Security instruments
+                output.accept(MetroItems.ITEM_SECURITY_DOOR);
+                output.accept(MetroItems.ITEM_SECURITY_INSPECTION_MACHINE);
+
+                // Concrete
+                output.accept(MetroItems.ITEM_CONCRETE);
+
+                // Platform
+                output.accept(MetroItems.ITEM_PLATFORM_A);
+
+                // Tiles
+                // White
+                output.accept(MetroItems.ITEM_TILES_WHITE);
+                output.accept(MetroItems.ITEM_TILES_LARGE_WHITE);
+                output.accept(MetroItems.ITEM_TILES_HORIZONTAL_WHITE);
+                output.accept(MetroItems.ITEM_TILES_SMALL_WHITE);
+
+                // Gray
+                output.accept(MetroItems.ITEM_TILES_GRAY);
+                output.accept(MetroItems.ITEM_TILES_HORIZONTAL_GRAY);
+                output.accept(MetroItems.ITEM_TILES_SMALL_GRAY);
+
+                // Cordon blocks
+                output.accept(MetroItems.ITEM_CORDON_YELLOW_BLACK);
+                output.accept(MetroItems.ITEM_CORDON_YELLOW_WHITE);
+                output.accept(MetroItems.ITEM_CORDON_RED_BLACK);
+                output.accept(MetroItems.ITEM_CORDON_RED_WHITE);
+
+                // Bench
+                output.accept(MetroItems.ITEM_BENCH);
+            })
             .build();
     public static final MetroConfig config = MetroConfig.load();
 
@@ -55,5 +125,6 @@ public class Metropolis implements ModInitializer {
                         InteractionResult.SUCCESS :
                         InteractionResult.PASS
         );
+
     }
 }

@@ -3,11 +3,6 @@ package team.dovecotmc.metropolis.client.gui.ticket_vendor;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.Tesselator;
-import team.dovecotmc.metropolis.Metropolis;
-import team.dovecotmc.metropolis.abstractinterface.util.MALocalizationUtil;
-import team.dovecotmc.metropolis.client.network.MetroClientNetwork;
-
-import java.util.List;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -16,6 +11,9 @@ import net.minecraft.client.sounds.SoundManager;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
+import team.dovecotmc.metropolis.Metropolis;
+import team.dovecotmc.metropolis.abstractinterface.util.MALocalizationUtil;
+import team.dovecotmc.metropolis.client.network.MetroClientNetwork;
 
 /**
  * @author Arrokoth

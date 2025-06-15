@@ -1,6 +1,7 @@
 package team.dovecotmc.metropolis.item;
 
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
 import net.minecraft.world.item.Item;
@@ -31,6 +32,6 @@ public class ItemWithTooltips extends Item {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag context) {
         super.appendHoverText(stack, world, tooltip, context);
-        tooltip.add(MALocalizationUtil.translatableText("tooltip." + Registry.ITEM.getKey(this).toLanguageKey()).setStyle(this.style));
+        tooltip.add(MALocalizationUtil.translatableText("tooltip." + BuiltInRegistries.ITEM.getKey(this).toLanguageKey()).setStyle(this.style));
     }
 }

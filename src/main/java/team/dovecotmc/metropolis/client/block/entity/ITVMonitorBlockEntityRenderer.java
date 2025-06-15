@@ -1,6 +1,5 @@
 package team.dovecotmc.metropolis.client.block.entity;
 
-import team.dovecotmc.metropolis.block.entity.BlockEntityITVMonitor;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Quaternion;
 import com.mojang.math.Vector3f;
@@ -15,6 +14,7 @@ import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import team.dovecotmc.metropolis.block.BlockITVMonitor;
+import team.dovecotmc.metropolis.block.entity.BlockEntityITVMonitor;
 
 /**
  * @author Arrokoth

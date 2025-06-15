@@ -15,7 +15,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import team.dovecotmc.metropolis.block.BlockITVMonitor;
 import team.dovecotmc.metropolis.block.entity.BlockEntityCamera;
-import team.dovecotmc.metropolis.block.entity.BlockEntityCamera;
 
 /**
  * @author Arrokoth
